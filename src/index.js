@@ -39,6 +39,6 @@ getData('london');
 searchBar.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     getData(searchBar.value);
-    searchBar.textContent = '';
+    searchBar.value = '';
   }
 });
