@@ -6,9 +6,9 @@ const cityNameHtml = userInterface().cityNameHtml;
 const tempHtml = userInterface().tempHtml;
 const mainDisplay = document.querySelector('.main-display');
 const weatherInfoHtml = userInterface().weatherInfo;
+const searchBar = search().searchBar;
 
-mainDisplay.appendChild(search().searchBar);
-mainDisplay.appendChild(search().button);
+mainDisplay.appendChild(searchBar);
 
 async function getData(city) {
   try {
@@ -35,3 +35,9 @@ async function getData(city) {
   }
 }
 getData('london');
+
+searchBar.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    getData(searchBar.value);
+  }
+});
