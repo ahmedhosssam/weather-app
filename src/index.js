@@ -1,6 +1,7 @@
 import userInterface from './userInterface.js';
 import search from './search.js';
 import './style.css';
+import '../imgs/sky.jpg';
 
 const apiKey = '215b0b355728137e0938ebde2ea7b344';
 const cityNameHtml = userInterface().cityNameHtml;
@@ -8,6 +9,8 @@ const tempHtml = userInterface().tempHtml;
 const mainDisplay = document.querySelector('.main-display');
 const weatherInfoHtml = userInterface().weatherInfo;
 const searchBar = search().searchBar;
+
+document.body.style.background = "no-repeat url('../imgs/sky.jpg' )";
 
 mainDisplay.appendChild(searchBar);
 
