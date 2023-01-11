@@ -3,7 +3,17 @@
     sans-serif;
 }
 
+html {
+  background: url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
+  background-size: 150%;
   display: flex;
   flex-direction: column;
   align-items: center;
