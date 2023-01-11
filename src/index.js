@@ -1,5 +1,6 @@
 import userInterface from './userInterface.js';
 import search from './search.js';
+import './style.css';
 
 const apiKey = '215b0b355728137e0938ebde2ea7b344';
 const cityNameHtml = userInterface().cityNameHtml;
